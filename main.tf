@@ -14,7 +14,7 @@
 #  * limitations under the License.
 #  */
 
-resource "google_storage_bucket" "bucket" {
+resource "google_storage_bucket_object" "bucket" {
   name                        = var.name
   project                     = var.project_id
   location                    = var.location
