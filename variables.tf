@@ -36,6 +36,7 @@ variable "versioning" {
 variable "gcp-creds" {
   description = ""
   type        = string
+  default     = ""
 }
 
 
