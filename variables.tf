@@ -33,6 +33,11 @@ variable "versioning" {
   type        = string
 }
 
+variable "gcp-creds" {
+  description = ""
+  type        = string
+}
+
 
 
 

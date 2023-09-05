@@ -16,16 +16,10 @@
 
 terraform {
   required_version = ">= 0.13"
-  required_providers {
+}
 
-    google = {
-      source  = "hashicorp/google"
-      version = ">= 4.46, < 5.0"
-    }
-  }
-
-  provider_meta "google" {
-    module_name = "blueprints/terraform/terraform-google-cloud-storage:simple_bucket/v4.0.1"
-  }
-
+provider "google" {
+  project     = var.project_id
+  region      = var.location
+  credentials = var.gcp-creds
 }
